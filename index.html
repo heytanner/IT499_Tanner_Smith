@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShopLite | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brind" href="index.html">MyStore</a>
+
+        <form class="search" onsubmit="return false;">
+            <input id="search-input" type="search" placeholder="Search products" aria-label="Search" />
+            <button class="btn icon" type="button" onclick="demosearch()">Search</button>
+        </form>
+
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="pages/category.html">Shop</a>
+            <a href="pages/cart.html">Cart <span class="pill" id="cart-count">0</span></a>
+            <a href="pages/order-status.html">Orders</a>
+            <a href="pages/chat.html">Support</a>
+            <a href="pages/about.html">About Us</a>
+            <a href="pages/contact.html">Contact Us</a>
+
+        </nav>
+
+        <button class="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
+            ☰
+        </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="pages/category.html">Shop</a>
+            <a href="pages/cart.html">Cart (<span  id="cart-count-mobile">0</span>)</a>
+            <a href="pages/order-status.html">Orders</a>
+            <a href="pages/chat.html">Support</a>
+            <a href="pages/about.html">About Us</a>
+            <a href="pages/contact.html">Contact Us</a>
+    </div>
+            
+</header>
+
+<main class="container">
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to ShopLite</h1>
+            <p>A polished e-commerece prototype (static HTML/CSS/JavaScript) inspired by global e-commerce websites</p>
+            <div class="hero-actions">
+                <a class="btn primary" href="pages/category.html">Shop Deals</a>
+                <a class="btn" href="pages/order-status.html">Track an Order</a>
+            </div>
+            <p class="fineprint">Demo only no real payments or shipping</p>
+        </div>
+        <div class="hero-card">
+            <h3>Today’s top picks</h3>
+            <ul class="bullets">
+                <li>Fast Mobile UX</li>
+                <li>Cart Totals</li>
+                <li>Checkout flow + confirmation</li>
+            </ul>
+            <a class="link" href="pages/about.html">See project details →</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <h2>Shop by category</h2>
+            <span class="muted"> categories</span>
+        </div>
+        <div class="grid cats">
+            <a class="cat" href="pages/category.html?cat=electronics">Electronics</a>
+            <a class="cat" href="pages/category.html?cat=accessories">Accessories</a>
+            <a class="cat" href="pages/category.html?cat=office">Office</a>
+            <a class="cat" href="pages/category.html?cat=fitness">Fitness</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div>
+            <strong>ShopLite</strong>
+            <div class="muted">E-commerce UI prototype</div>
+        </div>
+        <div class="footer-links">
+            <a href="pages/about.html">About Us</a>
+            <a href="pages/contact.html">Contact Us</a>
+            <a href="pages/chat.html">Support</a>
+        </div>
+    </div>
+</footer>
+       
+        
+</body>
+</html>
+
+
+
+
+
+

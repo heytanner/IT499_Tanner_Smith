@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ShopLite | About</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">ShopLite</a>
+
+    <form class="search" onsubmit="return false;">
+      <input id="search-input" type="search" placeholder="Search products..." aria-label="search"/>
+      <button class="btn icon" type="button" onclick="demoSearch()">Search</button>
+    </form>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="category.html">Shop</a>
+      <a href="cart.html">Cart<span class="pill" id="cart-count">0</span></a>
+      <a href="order-status.html">Orders</a>
+      <a href="chat.html">Support</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
+      ☰
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="../index.html">Home</a>
+    <a href="category.html">Shop</a>
+    <a href="cart.html">Cart (<span id="cart-count-mobile">0</span>)</a>
+    <a href="order-status.html">Orders</a>
+    <a href="chat.html">Chat</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Support</a>
+
+  </div>
+</header>
+<main class="container">
+  <section class="card">
+    <h2>About this prototype</h2>
+    <p>
+      This project demonstrates a responsive e-commerce website UI with simulated cart,
+      checkout, and order tracking. It is built with static HTML, CSS, and JavaScript.
+    </p>
+    <ul class="bullets">
+      <li>Browse products and add to cart</li>
+      <li>View and edit cart contents</li>
+      <li>Fake checkout flow with confirmation</li>
+      <li>Order tracking page using locally stored order data</li>
+      <li>Customer support chat UI</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="muted">About demo</div>
+  </div>
+</footer>
+</body>
+</html>

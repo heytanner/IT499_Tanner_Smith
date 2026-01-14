@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyStore | Product</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">MyStore</a>
+
+    <form class="search" onsubmit="return false;">
+      <input id="search-input" type="search" placeholder="Search products (demo)..." aria-label="Search" />
+      <button class="btn icon" type="button" onclick="demoSearch()">Search</button>
+    </form>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="category.html">Shop</a>
+      <a href="cart.html">Cart <span class="pill" id="cart-count">0</span></a>
+      <a href="order-status.html">Orders</a>
+      <a href="chat.html">Chat</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Support</a>
+    </nav>
+
+    <button class="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
+      ☰
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="../index.html">Home</a>
+    <a href="category.html">Shop</a>
+    <a href="cart.html">Cart (<span id="cart-count-mobile">0</span>)</a>
+    <a href="order-status.html">Orders</a>
+    <a href="chat.html">Chat</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Support</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="product-page" id="product-page">
+    <!-- populated by JS -->
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="muted">Demo Product Page</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyStore | Checkout</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">MyStore</a>
+
+    <form class="search" onsubmit="return false;">
+      <input id="search-input" type="search" placeholder="Search products (demo)..." aria-label="Search" />
+      <button class="btn icon" type="button" onclick="demoSearch()">Search</button>
+    </form>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="category.html">Shop</a>
+      <a href="cart.html">Cart <span class="pill" id="cart-count">0</span></a>
+      <a href="order-status.html">Orders</a>
+      <a href="chat.html">Chat</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Support</a>
+    </nav>
+
+    <button class="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
+      ☰
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="../index.html">Home</a>
+    <a href="category.html">Shop</a>
+    <a href="cart.html">Cart (<span id="cart-count-mobile">0</span>)</a>
+    <a href="order-status.html">Orders</a>
+    <a href="chat.html">Chat</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Support</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="section-head">
+    <h2>Checkout</h2>
+    <div class="muted">Demo checkout (no real payment).</div>
+  </div>
+
+  <div class="checkout-layout">
+    <form class="card" id="checkout-form">
+      <h3>Shipping</h3>
+      <label>Full Name <input name="name" required></label>
+      <label>Address <input name="address" required></label>
+      <label>City/State/ZIP <input name="city" required></label>
+
+      <h3>Payment</h3>
+      <label>Card Number <input name="card" inputmode="numeric" required></label>
+      <div class="two">
+        <label>MM/YY <input name="exp" required></label>
+        <label>CVV <input name="cvv" inputmode="numeric" required></label>
+      </div>
+
+      <button class="btn primary full" type="submit">Place Order</button>
+      <p class="fineprint">By placing your order, you agree this is a demo.</p>
+    </form>
+
+    <aside class="card summary">
+      <h3>Summary</h3>
+      <div class="row"><span>Items</span><span id="co-items">0</span></div>
+      <div class="row"><span>Subtotal</span><span id="co-subtotal">$0.00</span></div>
+      <div class="row"><span>Estimated tax</span><span id="co-tax">$0.00</span></div>
+      <div class="row total"><span>Total</span><span id="co-total">$0.00</span></div>
+      <a class="btn full" href="cart.html">Back to Cart</a>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="muted">Checkout demo</div>
+  </div>
+</footer>
+
+</body>
+</html>

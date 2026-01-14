@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ShopLite</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="site-header">
+  <h1>MyStore</h1>
+ <nav>
+  <a href="../index.html">Home</a>
+  <a href="category.html">Shop</a>
+  <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+  <a href="order-status.html">Orders</a>
+  <a href="contact.html">Support</a>
+</nav>
+
+</header>
+        <main>
+            <h2>
+                Customer Support
+            </h2>
+            <div class="chat-box" id="chat-box"></div>
+            <input id="chat-input" placeholder="Type message..."/>
+            <button onclick="sendMessage()">Send</button>
+        </main>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyStore | Chat</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">MyStore</a>
+
+    <form class="search" onsubmit="return false;">
+      <input id="search-input" type="search" placeholder="Search products (demo)..." aria-label="Search" />
+      <button class="btn icon" type="button" onclick="demoSearch()">Search</button>
+    </form>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="category.html">Shop</a>
+      <a href="cart.html">Cart <span class="pill" id="cart-count">0</span></a>
+      <a href="order-status.html">Orders</a>
+      <a href="chat.html">Chat</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Support</a>
+    </nav>
+
+    <button class="hamburger" aria-label="Open menu" onclick="toggleMobileNav()">
+      ☰
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="../index.html">Home</a>
+    <a href="category.html">Shop</a>
+    <a href="cart.html">Cart (<span id="cart-count-mobile">0</span>)</a>
+    <a href="order-status.html">Orders</a>
+    <a href="chat.html">Chat</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Support</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="section-head">
+    <h2>Customer Support Chat</h2>
+    <div class="muted">Demo chat — messages are stored locally.</div>
+  </div>
+
+  <section class="card chat-card">
+    <div class="chat-box" id="chat-box" aria-live="polite"></div>
+    <div class="chat-input-row">
+      <input id="chat-input" placeholder="Type your message..." />
+      <button class="btn primary" type="button" onclick="sendMessage()">Send</button>
+    </div>
+    <div class="muted small">Tip: Try asking about your order status.</div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="muted">Support demo</div>
+  </div>
+</footer>
+
+</body>
+</html>
