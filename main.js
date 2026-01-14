@@ -326,7 +326,7 @@ function initChat(){
   // Load existing conversation
   const messages = getChat();
   if (!messages.length){
-    messages.push({ from:"bot", text:"Hi! I'm MyStore Support. How can I help today?" });
+    messages.push({ from:"bot", text:"Hi! I'm ShopLite Support. How can I help today?" });
     setChat(messages);
   }
   renderChat();
